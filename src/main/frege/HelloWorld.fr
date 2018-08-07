@@ -1,0 +1,12 @@
+package HelloWorld where
+
+--import Data.List (scanl)
+
+fact :: Int -> Integer
+fact n = product [2..fromIntegral n]
+
+fibs :: [Integer]
+fibs = 1 : scanl (\acc x -> acc + x) 1 fibs
+
+salute :: String
+salute = concat $ replicate 100 "Hola, mundo!"
